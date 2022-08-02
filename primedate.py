@@ -18,7 +18,7 @@ def isPrimeNumber(n):
         return False
   return True
 
-def getPrimeNumberList(startDate, endDate, format):
+def getPrimeDateList(startDate, endDate, format):
   primeDateList = []
 
   for date in getDates(startDate, endDate):
@@ -27,7 +27,7 @@ def getPrimeNumberList(startDate, endDate, format):
   return primeDateList
 
 def makeHighlightedCalendar(startDate, endDate, format):
-  dateList = getPrimeNumberList(startDate, endDate, format)
+  dateList = getPrimeDateList(startDate, endDate, format)
   cal = calendar.HTMLCalendar()
   startDate = datetime.strptime(startDate, "%Y-%m-%d")
   endDate = datetime.strptime(endDate, "%Y-%m-%d")
